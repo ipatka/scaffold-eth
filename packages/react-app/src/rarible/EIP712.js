@@ -20,9 +20,7 @@ const DOMAIN_TYPE = [
 module.exports = {
   createTypeData: function (domainData, primaryType, message, types) {
     return {
-      types: Object.assign({
-        EIP712Domain: DOMAIN_TYPE,
-      }, types),
+      types: types,
       domain: domainData,
       primaryType: primaryType,
       message: message
